@@ -1,0 +1,39 @@
+- HTML
+
+● What is doctype and what does it do? 
+It is the first line of code in html and xhtml document declarring the document's type. It tells the browser what version of
+html is the document written in
+
+● What are data-* attributes for?
+They allow us to embed our own defined data in the html pages. they could be later used by javascript.
+
+● How does positioning CSS and script tags help the performance?
+Seperation of conserns. If somthing went wrong in css or javascript it does not effect the html document loading.
+Another thing is that the browser does not have to treat the loading document in different ways.
+
+
+- CSS
+
+● What is the difference between "resetting" and "normalizing" CSS? Which one do
+you use?
+Resetting changes all browser built-in styling to null to avoid cross-browser differencees while normalizing 
+improves cross-browser consistency in HTML element default styling of the browser’s user agent. 
+Basicley it preserve default useful browsers instead of erasing them.
+I'll prefer normalizing becaus it is faster, easier and keeps usfull styling and prevent "reenventing the wheel".
+ 
+● What is box-sizing in CSS? How does it work?
+It defines how the total width and height of an element is calculated.
+width or height = margin + border + padding + content
+
+● What’s the difference between a relative, fixed, absolute and statically positioned
+element?
+reletive positioning is reletive to the element normal position and the gap that it leaves behind cannot be filled by other elements.
+absolute takes the element out of its normal flow and position is reletive to the first ancestor which has reletive or static positioning.
+static is the default positioning and is the normall flow of the document.
+fixed positioning fixes the position of the element within the browser screen and will not go away with scrolling.
+
+● What does it mean when we say "a website is mobile-first designed"?
+It is an approach in which designers start project for mobile devices first. 
+This can be done by coding the web-app's design for the smallest screen 
+first and gradually work on larger screen sizes.
+

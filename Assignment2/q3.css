@@ -1,0 +1,109 @@
+body{
+    padding: 0;
+    font-size: 20px;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    padding: 10px 10% 15px;
+    color: white;
+    background-color: #1f4cde;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+section{
+    float: left;
+    display: inline;
+    width: 100%;
+}
+
+#add-task{
+    padding: 15px 10% 15px;
+    font-size: 0.8em;
+}
+
+#tasks{
+    padding: 15px 0 0;
+    background-color: #1f4cde;
+    color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#task-place{
+    position: relative;
+    background-color: #a8caff;
+    color: black;
+    min-height: 300px;
+    margin-top: 15px;
+    padding-top: 15px;
+    overflow-y: scroll;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#task-text{
+    margin-left: 10%;
+}
+
+#no-task{
+    position: absolute;
+    top: 40%;
+    margin-left: 20%;
+}
+
+#ant{
+    display: inline;
+    animation-name: ant;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    position: relative;
+}
+
+form > input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;;
+    margin: 5px 0 5px;
+}
+
+form > textarea{
+    width: 100%;
+    min-height: 150px;
+    border-radius: 5px;;
+    margin: 5px 0 5px;
+}
+
+input[type=text], textarea{
+    padding: 10px;
+    background-color: #ddd;
+    border: 0;
+    color: black;
+}
+
+input[type=submit]{
+    background-color: #1f4cde;
+    color: white;
+    border: 0
+}
+
+@keyframes ant {
+    from {left: 0%; }
+    to {left: 20%; }
+}
+
+  
+@media only screen and (min-width: 768px) {
+    section{
+        width: 50%;
+    }
+
+    header{
+        height: 50px;
+    }
+}
