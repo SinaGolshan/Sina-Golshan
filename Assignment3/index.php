@@ -15,7 +15,7 @@ function createTable(int $row, int $col){
         $table .= "<tr>";
         for($j = 1; $j <= $col; $j++){
             $table .= "<td>";
-            $table .= "d$i$j";
+            $table .= $i*$j;
             $table .= "</td>";
         }
         $table .= "</tr>";
